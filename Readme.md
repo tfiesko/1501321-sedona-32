@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Антон Тарасенко](https://up.htmlacademy.ru/htmlcss/32/user/1501321).
-* Наставник: Евгений Бервяченок. (https://htmlacademy.ru/profile/jackson)
+* Наставник: Евгений Бервяченок.(https://htmlacademy.ru/profile/jackson)
 
 ---
 
