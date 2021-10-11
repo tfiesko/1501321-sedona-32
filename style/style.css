@@ -1,0 +1,18 @@
+body  {
+background-color: #F2F2F2;
+color: #333333;
+
+
+
+}
+
+.page-header {
+  background-color: #E4F1F9;
+}
+
+.main-index {
+  background-image: url("../img/index-background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+
+}
