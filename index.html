@@ -42,7 +42,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link button" href="#">
+            <a class="navigation-link button button-brown" href="#">
                 Хочу сюда!
             </a>
           </li>
@@ -50,8 +50,10 @@
       </nav>
     </header>
     <main class="main-index">
-      <img class="logo-2" src="img\logo-welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону.">
-      <h1>
+      <div class="index-logo">
+        <img class="logo-2" src="img\logo-welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону.">
+      </div>
+      <h1 class="page-title">
         Седона — небольшой городок в Аризоне,
         заслуживающий большего!
       </h1>
@@ -88,7 +90,7 @@
                 <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
                 <img class="advantages-pic" src="img\brige.jpg" width="800" height="384" alt="Мост дьявола.">
               </section>
-              <ol class="advantages-list">
+              <ol class="advantages-list advantages-list-numbered">
                 <li class="advantages-item">
                    <h3 class="advantages-title">Небольшая
                      площадь</h3>
@@ -108,12 +110,12 @@
               </ol>
       </section>
       <section class="hotel-search">
-        <h2 class="hotel-search-title visually-hidden">Поиск отеля</h2>
-        <b class="hotel-search-offer">Заинтересовались?</b>
+        <h2 class="hotel-search-title visually-hidden">Поиск гостиницы</h2>
+        <b>Заинтересовались?</b>
         <p class="hotel-search-description">Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <a class="hotel-search-link button" href="#">Поиск гостиницы в Седоне</a>
+        <a class="hotel-search-link button button-brown button-large" href="#">Поиск гостиницы в Седоне</a>
       </section>
     </main>
     <footer class="page-footer">
@@ -126,15 +128,10 @@
               <label class="visually-hidden" for="newsletter-email">Email</label>
               <input id="newsletter-email" class="newsletter-field" type="email" name="newsletter-email" placeholder="Ваш e-mail">
             </p>
-            <button class="button" type="submit">Подписаться</button>
+            <button class="button button-blue button-large" type="submit">Подписаться</button>
           </form>
         </section>
-        <section class="footer-contacts">
-          <h2 class="page-footer-title visually-hidden">Контакты</h2>
-          <address class="contacts-address">
-            <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          </address>
-        </section>
+
         <section class="footer-social">
           <h2 class="page-footer-title visually-hidden">Социальные сети</h2>
           <ul class="footer-social-list">
@@ -157,6 +154,10 @@
           <a class="htmlacademy-link" href="https://htmlacademy.ru/">
             <img class="htmlacademy-logo" src="img\logo_htmlacademy.svg" width="115" height="34" alt="Логотип htmlacademy.">
           </a>
+        </section>
+        <section class="footer-contacts">
+          <h2 class="page-footer-title visually-hidden">Контакты</h2>
+          <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </section>
     </footer>
   </body>
