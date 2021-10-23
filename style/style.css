@@ -17,7 +17,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body  {
+  margin: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
   font-family: "PT Sans",sans-serif;
   font-size: 22px;
   line-height: 26px;
@@ -60,8 +68,22 @@ body  {
   background-color:#FFFFFF;
 }
 
+.navigation {
+  display: flex;
+  width: 1070px;
+  margin: 0 auto;
+}
+
 .navigation-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 450px;
+}
+
+.navigation-user {
+  max-width:300px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -80,6 +102,17 @@ body  {
 
 }
 
+.logo-2 {
+  display: block;
+  margin: 0 auto;
+
+}
+
+.logo {
+
+}
+
+
 .main-index {
 background-color: #FFFFFF;
 }
@@ -88,6 +121,14 @@ background-color: #FFFFFF;
   background-color: #FFFFFF;
 }
 
+.main-container {
+flex-grow: 1;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
 
 /* catalog */
 
@@ -170,7 +211,13 @@ background-color: #FFFFFF;
 .advantages-title {
   font-size: 24px;
   line-height: 28px;
+  text-transform: uppercase;
   color:#000000;
+}
+
+.advantages-list {
+  padding: 0;
+  margin: 0;
 }
 
 .advantages h2 {
@@ -183,10 +230,32 @@ background-color: #FFFFFF;
 .advantage-with-pic {
   background-color: #83B3D3;
   color:#FFFFFF;
+  display: flex;
+  width: 1200px;
+}
+
+.advantage-with-pic:last-of-type {
+  flex-direction: row-reverse;
+}
+
+.advantage-content-container {
+  width: 400px;
+}
+
+.advantages-pic {
+  width: 800px;
+}
+
+.advantages-list {
+  display: flex;
 }
 
 .advantage-with-pic .advantages-title {
   color:#FFFFFF;
+}
+
+.advantages-item {
+  width: 400px;
 }
 
 .advantages-item:nth-child(odd) {
@@ -209,6 +278,8 @@ background-color: #FFFFFF;
 
 .hotel-search {
   text-align: center;
+  width: 720px;
+  margin: 0 auto;
 }
 
 .hotel-search b {
@@ -220,6 +291,7 @@ background-color: #FFFFFF;
 /* footer */
 
 .newsletter {
+  width: 1200px;
   color:#FFFFFF;
   background-image: url("../img/background.jpg");
   background-size: 100% auto;
@@ -237,6 +309,17 @@ background-color: #FFFFFF;
   background-color: #FFFFFF;
 }
 
+.page-footer-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-bottom-container {
+  width: 1070px;
+  margin: 0 auto;
+  display: flex;
+}
+
 .page-footer-title {
   font-weight: bold;
   font-size: 30px;
@@ -247,7 +330,22 @@ background-color: #FFFFFF;
 .footer-contacts {
   font-size: 40px;
   line-height: 40px;
+  width: 720px;
   text-align: center;
+}
+
+.footer-social {
+  width: 130px;
+  margin-left: 38px;
+}
+
+.footer-social-list {
+  padding: 0;
+  margin: 0;
+}
+
+.htmlacademy-link {
+  margin-left: auto;
 }
 
 .contacts-phone {
