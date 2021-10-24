@@ -184,8 +184,8 @@ flex-grow: 1;
   text-transform: uppercase;
 }
 
-.catalog-filter {
-
+.catalog-filter-form {
+  display: flex;
 }
 
 .catalog-filter-title {
@@ -194,6 +194,14 @@ flex-grow: 1;
   font-weight: bold;
 }
 
+.filter-left-column{
+  width: 370px;
+  margin-right: auto;
+}
+
+.filter-right-column {
+  width: 530px;
+}
 /* Главная страница */
 
 .page-title {
