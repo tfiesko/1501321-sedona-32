@@ -68,6 +68,10 @@ body  {
   background-color:#FFFFFF;
 }
 
+.inner-header {
+  margin: 0 72px;
+}
+
 .navigation {
   display: flex;
   width: 1070px;
@@ -136,6 +140,7 @@ flex-grow: 1;
 
 /* Общие стили для фильтров и хедера с хлебными крошками */
 .inner-background-container {
+  width: 1200px;
   background-image: url("../img/catalog-background-1.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -148,7 +153,14 @@ flex-grow: 1;
   line-height: 23px;
 }
 
+.hotels-cards-and-sort {
+  width: 1060px;
+  margin: 0 auto;
+}
+
 .breadcrumbs {
+  padding: 0;
+  margin: 0;
   list-style: none;
   font-size: 16px;
   line-height: 21px;
@@ -157,6 +169,24 @@ flex-grow: 1;
 .breadcrumbs-link {
   color: inherit;
   text-decoration: none;
+}
+
+.hotel-card {
+  width: 1060px;
+  display: flex;
+}
+
+.hotel-card-left-column {
+  width: 550px;
+  margin-right: auto;
+}
+
+.hotel-card-right-column {
+  width:160px;
+}
+
+.hotels-cards-list {
+
 }
 
 .hotel-card-link {
@@ -178,6 +208,7 @@ flex-grow: 1;
 }
 
 .filter-result {
+  width: 360px;
   font-weight: bold;
   font-size: 30px;
   line-height: 39px;
@@ -186,6 +217,7 @@ flex-grow: 1;
 
 .catalog-filter-form {
   display: flex;
+  margin: 0 72px;
 }
 
 .catalog-filter-title {
@@ -201,6 +233,17 @@ flex-grow: 1;
 
 .filter-right-column {
   width: 530px;
+}
+
+.sort-container {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.sort-column {
+  width: 580px;
+  margin-left: auto;
 }
 /* Главная страница */
 
