@@ -21,6 +21,17 @@
   box-sizing: border-box;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 html {
   height: 100%;
 }
@@ -88,6 +99,8 @@ body  {
 }
 
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -99,7 +112,9 @@ body  {
 }
 
 .navigation-link {
+  display: block;
   color: inherit;
+  padding: 6px 12px;
   font-size: 20px;
   line-height: 26px;
   font-weight: bold;
@@ -107,11 +122,18 @@ body  {
   text-align: center;
 }
 
+.navigation-user .navigation-link {
+  min-width: 18px;
+  min-height: 18px;
+}
+
 .index-logo {
-  background-image: url("../img/index-background.jpg");
   background-color: #cfa294;
+  background-image: url("../img/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  padding-top: 50px;
+  padding-bottom: 83px;
 
 }
 
