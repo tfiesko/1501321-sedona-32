@@ -190,7 +190,7 @@ flex-grow: 1;
 }
 
 .hotels-cards-list {
-  padding: 0;
+  padding: 0 71px;
   margin: 0;
 }
 
@@ -245,12 +245,16 @@ flex-grow: 1;
 
 .sort-container {
   display: flex;
-  margin: 0 auto;
+  padding: 0 71px;
 }
 
 .sort-column {
   width: 580px;
   margin-left: auto;
+}
+
+.show-more-container {
+  text-align: center;
 }
 /* Главная страница */
 
@@ -327,7 +331,18 @@ flex-grow: 1;
   background-color: rgba(131, 179, 211, 0.2);
 }
 
+.pagination-container {
+  display: flex;
+  padding: 0  71px;
+}
 
+.pagination {
+  width: 370px;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+  margin-right: auto;
+}
 
 
 .pagination-current {
@@ -335,6 +350,10 @@ flex-grow: 1;
   font-weight: bold;
   font-size: 20px;
   line-height: 26px;
+}
+
+.number-of-cards-form {
+  width: 390px;
 }
 
 .hotel-search {
