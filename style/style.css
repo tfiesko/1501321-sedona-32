@@ -305,6 +305,7 @@ flex-grow: 1;
 .advantages-list {
   padding: 0;
   margin: 0;
+  list-style-type: none;
 }
 
 .advantages h2 {
@@ -325,9 +326,7 @@ flex-grow: 1;
   flex-direction: row-reverse;
 }
 
-.advantage-content-container {
-  width: 400px;
-}
+
 
 .advantages-pic {
   width: 800px;
@@ -341,8 +340,13 @@ flex-grow: 1;
   color:#FFFFFF;
 }
 
-.advantages-item {
+
+.advantage-content-container, .advantages-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0 75px;
   width: 400px;
+  min-height: 384px;
 }
 
 .advantages-item:nth-child(odd) {
