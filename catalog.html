@@ -105,22 +105,22 @@
                     </fieldset>
                     <fieldset class="catalog-filter-group">
                       <legend class="catalog-filter-title">Тип жилья</legend>
-                      <ul class="catalog-fieldset-list">
-                        <li class="catalog-fieldset-item">
+                      <ul class="catalog-filter-list">
+                        <li class="catalog-filter-item">
                           <label class="control">
                             <input class="visually-hidden control-input" type="radio" value="hotel" name="type-of-housing" checked>
                             <span class="control-mark"></span>
                             <span class="control-label">Гостиница</span>
                           </label>
                         </li>
-                        <li class="catalog-fieldset-item">
+                        <li class="catalog-filter-item">
                           <label class="control">
                             <input class="visually-hidden control-input" type="radio" value="motel" name="type-of-housing">
                             <span class="control-mark"></span>
                             <span class="control-label">Мотель</span>
                           </label>
                         </li>
-                        <li class="catalog-fieldset-item">
+                        <li class="catalog-filter-item">
                           <label class="control">
                             <input class="visually-hidden control-input" type="radio" value="apartments" name="type-of-housing">
                             <span class="control-mark"></span>
@@ -253,7 +253,7 @@
               <div class="pagination-container">
                   <ul class="pagination">
                     <li class="pagination-item">
-                      <a class="pagination-link pagination-current">1</a>
+                      <a class="pagination-link button button-large pagination-current">1</a>
                     </li>
                     <li class="pagination-item">
                       <a class="pagination-link button button-blue button-large" href="#">2</a>
@@ -272,15 +272,16 @@
                     </li>
                   </ul>
                   <form class="number-of-cards-form" action="https://echo.htmlacademy.ru/" method="post">
-                    <label class="number-of-cards-title">
-                      <p class="number-of-cards-description">Гостиниц на странице:</p>
-                      <select class="number-of-cards-select" name="hotels-on-page">
+                    <label for="hotels-on-page" class="number-of-cards-label">
+                      <span class="number-of-cards-description">Гостиниц на странице:</span>
+                    </label>
+                      <select id="hotels-on-page" class="number-of-cards-select" name="hotels-on-page">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option selected value="4">4</option>
                       </select>
-                    </label>
+
                     <button class="visually-hidden" type="submit">Применить</button>
                   </form>
               </div>

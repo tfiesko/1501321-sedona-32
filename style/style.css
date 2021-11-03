@@ -89,7 +89,13 @@ body  {
 }
 
 .inner-header {
+  margin-bottom: 50px;
+}
 
+.inner-header-title {
+  margin: 0;
+  font-size: 60px;
+  line-height: 78px;
 }
 
 .navigation {
@@ -174,6 +180,8 @@ flex-grow: 1;
   background-color: #83B3D3;
   color: #FFFFFF;
   padding: 0 71px;
+  padding-top:50px;
+  padding-bottom: 85px;
 }
 
 .hotels-cards-and-sort, .catalog-filter {
@@ -191,11 +199,22 @@ flex-grow: 1;
   list-style: none;
   font-size: 16px;
   line-height: 21px;
+  display: flex;
 }
 
 .breadcrumbs-link {
   color: inherit;
   text-decoration: none;
+
+}
+
+.breadcrumbs-item:first-child {
+  height: 12px;
+  width: 12px;
+}
+
+.breadcrumbs-item {
+  margin-right: 27px;
 }
 
 .hotel-card {
@@ -251,19 +270,39 @@ flex-grow: 1;
   display: flex;
 }
 
+.catalog-filter-group {
+  width: 160px;
+  margin-right: 50px;
+  border: none;
+  padding: 0;
+
+}
+
+.catalog-filter-group:nth-child(2n) {
+  margin-right: 0;
+}
+
 .catalog-filter-title {
   font-size: 20px;
   line-height: 26px;
   font-weight: bold;
 }
 
+.catalog-filter-list{
+  list-style-type: none;
+  padding: 0;
+}
+
 .filter-left-column{
+  display: flex;
+  flex-wrap: wrap;
   width: 380px;
   margin-right: auto;
 }
 
 .filter-right-column {
   width: 540px;
+  display: flex;
 }
 
 .sort-container {
@@ -272,12 +311,24 @@ flex-grow: 1;
 }
 
 .sort-column {
+  display: flex;
+  align-items: center;
   width: 580px;
   margin-left: auto;
 }
 
+.sort-column .button {
+  height: 48px;
+  width: 48px;
+}
+
+.sorting-form {
+  margin-right: auto;
+}
+
 .show-more-container {
   text-align: center;
+  padding: 30px 0;
 }
 /* Главная страница */
 
@@ -375,6 +426,7 @@ flex-grow: 1;
 }
 
 .pagination {
+  display: flex;
   width: 370px;
   padding: 0px;
   margin: 0px;
@@ -382,16 +434,27 @@ flex-grow: 1;
   margin-right: auto;
 }
 
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.pagination-link {
+  display: block;
+  padding: 9px 0;
+  height: 55px;
+  width: 55px;
+}
 
 .pagination-current {
+  color: inherit;
   background-color:#F2F2F2;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 26px;
 }
 
 .number-of-cards-form {
   width: 390px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .hotel-search {
