@@ -86,6 +86,7 @@ body  {
 
 .page-header {
   color: #000000;
+  position: relative;
 }
 
 .inner-header {
@@ -133,10 +134,16 @@ body  {
   min-height: 18px;
 }
 
+.logo-small {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .index-logo {
   background-color: #cfa294;
   background-image: url("../img/index-background.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   padding-top: 50px;
   padding-bottom: 83px;
@@ -144,16 +151,11 @@ body  {
 
 }
 
-.logo-2 {
+.logo-welcome {
   display: block;
   margin: 0 auto;
 
 }
-
-.logo {
-
-}
-
 
 .main-index {
 
@@ -175,7 +177,7 @@ flex-grow: 1;
 .inner-background-container {
   width: 1200px;
   background-image: url("../img/catalog-background-1.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #83B3D3;
   color: #FFFFFF;
@@ -189,8 +191,9 @@ flex-grow: 1;
   line-height: 23px;
 }
 
-.hotels-cards-and-sort {
-
+.hotels-cards-and-sort-container {
+  width: 1058px;
+  margin: 0 auto;
 }
 
 .breadcrumbs {
@@ -220,9 +223,12 @@ flex-grow: 1;
 .hotel-card {
   width: 1060px;
   display: flex;
+  padding: 30px 0;
+  border-bottom: 1px solid #E6E6E6;
 }
 
 .hotel-card-left-column {
+  display: flex;
   width: 550px;
   margin-right: auto;
 }
@@ -231,16 +237,41 @@ flex-grow: 1;
   width:160px;
 }
 
+.hotel-card-grid-container {
+  display: grid;
+  grid-template-columns: 150px 160px;
+  grid-template-rows: min-content 1fr min-content;
+  column-gap: 8px;
+}
+
+.hotel-card-link-title {
+  grid-column: span 2;
+}
+
+.hotel-card-price {
+
+}
+
+
 .hotels-cards-list {
-  padding: 0 71px;
+  padding: 0;
   margin: 0;
 }
 
-.hotel-card-link {
+.hotel-card-link-pic, .hotel-card-link-title {
   text-decoration: none;
 }
 
+.hotel-card-link-pic {
+  margin-right: 36px;
+}
+
+.hotel-card-image {
+  display: block;
+}
+
 .hotel-card-title {
+  margin: 0;
   font-size: 24px;
   line-height: 31px;
   color: #000000;
@@ -307,7 +338,7 @@ flex-grow: 1;
 
 .sort-container {
   display: flex;
-  padding: 0 71px;
+  border-bottom: 1px solid #E6E6E6;
 }
 
 .sort-column {
@@ -329,6 +360,7 @@ flex-grow: 1;
 .show-more-container {
   text-align: center;
   padding: 30px 0;
+  border-bottom: 1px solid #E6E6E6;
 }
 /* Главная страница */
 
@@ -350,6 +382,8 @@ flex-grow: 1;
 }
 
 .advantages-title {
+  margin:0px;
+  margin-bottom: 25px;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
@@ -393,23 +427,57 @@ flex-grow: 1;
 }
 
 .advantages-description {
-  margin-bottom: 80px;
+  margin: 0;
 }
 
-.advantages-title {
-  margin-top:auto;
+.advantages-number {
+  margin: 0;
+  margin-bottom: 26px;
 }
 
 .advantage-with-pic .advantages-title {
   color:#FFFFFF;
 }
 
-
 .advantage-content-container, .advantages-item {
   display: flex;
   flex-direction: column;
   width: 400px;
   min-height: 384px;
+  padding: 85px;
+}
+
+.advantages-item-with-icon:nth-child(1)::before {
+  content: "";
+  margin: 0 auto;
+  margin-bottom: 23px;
+  width: 80px;
+  height: 76px;
+  background-image: url(../img/advantages-icon-1.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.advantages-item-with-icon:nth-child(2)::before {
+  content: "";
+  margin: 0 auto;
+  margin-bottom: 23px;
+  width: 80px;
+  height: 76px;
+  background-image: url(../img/advantages-icon-2.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.advantages-item-with-icon:nth-child(3)::before {
+  content: "";
+  margin: 0 auto;
+  margin-bottom: 23px;
+  width: 80px;
+  height: 76px;
+  background-image: url(../img/advantages-icon-3.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .advantages-item:nth-child(odd) {
@@ -422,7 +490,7 @@ flex-grow: 1;
 
 .pagination-container {
   display: flex;
-  padding: 0  71px;
+  padding: 31px 0;
 }
 
 .pagination {
@@ -483,18 +551,17 @@ flex-grow: 1;
 .newsletter {
   color:#FFFFFF;
   background-image: url("../img/background.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color:#83B3D3;
+  padding: 94px 0;
   text-align: center;
 }
 
 .newsletter-inner {
   text-align: center;
-}
-
-.newsletter, .newsletter-inner {
-  padding: 94px 0;
+  padding: 58px 0;
+  padding-bottom: 94px;
 }
 
 .footer-bottom-container {
