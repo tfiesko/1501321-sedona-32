@@ -66,11 +66,20 @@ body  {
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
+  cursor: pointer;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 4px;
 }
 
 .button-large {
   font-size: 20px;
   line-height: 36px;
+  border-radius: 10px;
+  padding: 0 150px;
+  padding-top: 13px;
+  padding-bottom: 17px;
+
 }
 
 .button-brown {
@@ -83,6 +92,8 @@ body  {
 
 .button.active {
   background-color: #7DB54F;
+  padding-left:28px;
+  padding-right: 28px;
 }
 
 .page-header {
@@ -103,6 +114,8 @@ body  {
 .navigation {
   display: flex;
   justify-content: space-between;
+  align-content: center;
+  min-height: 65px;
   padding: 0 71px;
 }
 
@@ -135,6 +148,8 @@ body  {
 .navigation-user .navigation-link {
   min-width: 18px;
   min-height: 18px;
+  padding: 10px;
+  box-sizing: content-box;
 }
 
 .navigation-icon {
@@ -144,11 +159,51 @@ body  {
   left: 0;
   bottom: 0;
   margin: auto;
+  fill: black;
+}
+
+.navigation-favourites-link::before {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  content: '12';
+  font-size: 10px;
+  line-height: 19px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background-color: #7DB550;
+  color: #FFFFFF;
+  right: -4px;
+  top: 0;
+  text-align: center;
+  font-weight: normal;
 }
 
 .navigation-link:hover .navigation-icon {
   fill: #756257;
 
+}
+
+.navigation-link:active .navigation-icon {
+  fill:#756257;
+  opacity: 30%;
+}
+
+.navigation-link:active {
+  color: rgba(117, 98, 87, 0.3);
+}
+
+.navigation-user-button .navigation-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.navigation-user-button {
+  margin-left: 23px;
+}
+
+.navigation-favourites-link:active::before {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .logo-small {
