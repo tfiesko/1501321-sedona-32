@@ -146,21 +146,18 @@ body  {
 }
 
 .navigation-user .navigation-link {
+  display: flex;
+  margin: auto;
   min-width: 18px;
   min-height: 18px;
   padding: 10px;
-  box-sizing: content-box;
 }
 
 .navigation-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
   margin: auto;
   fill: black;
 }
+
 
 .navigation-favourites-link::before {
   display: block;
@@ -194,11 +191,23 @@ body  {
   color: rgba(117, 98, 87, 0.3);
 }
 
-.navigation-user-button .navigation-link:active {
+.button:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.navigation-user-button {
+.button-brown:hover, .button-brown:active, .button-brown:focus {
+  background-color: #615048;
+}
+
+.button-blue:hover, .button-blue:active, .button-blue:focus {
+  background-color: #68A2CA;
+}
+
+.button.active:hover, .button.active:active, .button.active:focus {
+  background-color: #6C9E42;
+}
+
+.navigation-button-item {
   margin-left: 23px;
 }
 
