@@ -837,3 +837,27 @@ flex-grow: 1;
 .contacts-phone:active {
   opacity: 0.3;
 }
+
+.field {
+  margin: 0;
+  font: inherit;
+  padding: 24px;
+  padding-left: 22px;
+  padding-right: 19px;
+  border-radius: 10px 0px 0px 10px;
+  width: 600px;
+  background-color: #F2F2F2;
+  border: 2px solid transparent;
+}
+
+.field:hover {
+  background-color: #E6E6E6;
+}
+
+.field:active {
+  border-color: #000000;
+}
+
+.field.error {
+  border-color: #FF5757;
+}
