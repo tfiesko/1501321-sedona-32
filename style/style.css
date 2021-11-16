@@ -1096,8 +1096,8 @@ flex-grow: 1;
   position: absolute;
   border-radius: 20px;
   z-index: 2;
-  top: 0;
-  right: 0;
+  top: 30px;
+  left: -200px;
 }
 
 .popover-content {
@@ -1164,6 +1164,10 @@ flex-grow: 1;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
   z-index: 1;
+}
+
+.modal-container-close {
+  display: none;
 }
 
 .modal {
