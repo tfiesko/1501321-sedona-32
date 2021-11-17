@@ -237,34 +237,36 @@
       </div>
       <div class="modal-container modal-container-close">
         <div class="modal modal-search-hotel">
-          <button type="button" class="modal-close-button"></button>
-          <span class="visually-hidden">Закрыть</span>
+          <button type="button" class="modal-close-button"><span class="visually-hidden">Закрыть</span></button>
           <section class="modal-content">
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
             <form class="modal-hotel-search-form" action="https://echo.htmlacademy.ru/" method="post">
               <div class="modal-field-group">
                 <label for="arrival-date">Дата заезда:</label>
-                <input class="modal-field" type="text" id="arrival-date" name="arrival-date" value="27 апреля 2020">
+                <input class="modal-field invalid-input" type="text" id="arrival-date" name="arrival-date" value="27 апреля 2020">
+                <p class="modal-input-status">
+                  <span class="modal-input-success">На эти даты есть свободные номера. Пока есть.</span>
+                  <span class="modal-input-error">Мы не можем отправить вас в прошлое.</span>
+                </p>
               </div>
-              <p class="modal-input-status">
-                <span class="modal-input-success">На эти даты есть свободные номера. Пока есть.</span>
-                <span class="modal-input-error">Мы не можем отправить вас в прошлое.</span>
-              </d>
               <div class="modal-field-group">
                 <label for="departure-date">Дата выезда:</label>
-                <input class="modal-field" type="text" id="departure-date" name="departure-date" value="1 сентября 2021">
+                <input class="modal-field valid-input" type="text" id="departure-date" name="departure-date" value="1 сентября 2021">
+                <p class="modal-input-status">
+                  <span class="modal-input-success">На эти даты есть свободные номера. Пока есть.</span>
+                  <span class="modal-input-error">Мы не можем отправить вас в прошлое.</span>
+                </p>
               </div>
-              <p class="modal-input-status">
-                <span class="modal-input-success">На эти даты есть свободные номера. Пока есть.</span>
-                <span class="modal-input-error">Мы не можем отправить вас в прошлое.</span>
-              </p>
               <div class="modal-field-group">
+                <div class="field-group-left-col">
                   <label for="number-of-people">Взрослые:</label>
                   <div class="number-buttons-wrapper">
                     <button type="button" class="minus-button"></button>
                     <button type="button" class="plus-button"></button>
                     <input class="modal-field modal-field-number" type="number" id="number-of-people" name="number-of-people" value="2">
                   </div>
+                </div>
+                <div class="field-group-right-col">
                   <label for="amount-of-children">Дети:</label>
                   <button type="button" class="info-icon"> <span class="visually-hidden">Дополнительная информация</span> </button>
                   <div class="number-buttons-wrapper">
@@ -272,6 +274,7 @@
                     <button type="button" class="plus-button"></button>
                     <input class="modal-field modal-field-number" type="number" id="amount-of-children" name="amount-of-children" value="1">
                   </div>
+                </div>
               </div>
               <button type="submit" class="button button-blue modal-button">Найти</button>
             </form>
