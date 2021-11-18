@@ -140,11 +140,11 @@
                       <div class="range-wrapper-inputs">
                         <label class="catalog-filter-label">
                           <input class="range-input range-input-min" type="number" name="min-price" value="0">
-                          от
+                          <span>от</span>
                         </label>
                         <label class="catalog-filter-label">
                           <input class="range-input range-input-max" type="number" name="max-price" value="9000">
-                          до
+                          <span>до</span>
                         </label>
                       </div>
                       <div class="range-scale">
@@ -211,7 +211,12 @@
                       </div>
                     </div>
                     <div class="hotel-card-right-column">
-                      <span class="hotel-card-stars visually-hidden">4 звезды</span>
+                      <div class="hotel-card-stars">
+                        <img src="img/star-rating.svg" width="18" height="17" alt="4 звезды">
+                        <img src="img/star-rating.svg" width="18" height="17" alt="">
+                        <img src="img/star-rating.svg" width="18" height="17" alt="">
+                        <img src="img/star-rating.svg" width="18" height="17" alt="">
+                      </div>
                       <span class="hotel-card-rating">Рейтинг: 8,5</span>
                     </div>
                   </li>
@@ -231,7 +236,11 @@
                       </div>
                     </div>
                     <div class="hotel-card-right-column">
-                      <span class="hotel-card-stars visually-hidden">3 звезды</span>
+                      <div class="hotel-card-stars">
+                        <img src="img/star-rating.svg" width="18" height="17" alt="3 звезды">
+                        <img src="img/star-rating.svg" width="18" height="17" alt="">
+                        <img src="img/star-rating.svg" width="18" height="17" alt="">
+                      </div>
                       <span class="hotel-card-rating">Рейтинг: 8,9</span>
                     </div>
                   </li>
@@ -251,7 +260,10 @@
                       </div>
                     </div>
                     <div class="hotel-card-right-column">
-                      <span class="hotel-card-stars visually-hidden">2 звезды</span>
+                      <div class="hotel-card-stars">
+                        <img src="img/star-rating.svg" width="18" height="17" alt="2 звезды">
+                        <img src="img/star-rating.svg" width="18" height="17" alt="">
+                      </div>
                       <span class="hotel-card-rating">Рейтинг: 9,2</span>
                     </div>
                   </li>
@@ -271,7 +283,10 @@
                       </div>
                     </div>
                     <div class="hotel-card-right-column">
-                      <span class="hotel-card-stars visually-hidden">2 звезды</span>
+                      <div class="hotel-card-stars">
+                        <img src="img/star-rating.svg" width="18" height="17" alt="2 звезды">
+                        <img src="img/star-rating.svg" width="18" height="17" alt="">
+                      </div>
                       <span class="hotel-card-rating">Рейтинг: 9,2</span>
                     </div>
                   </li>
@@ -304,13 +319,14 @@
                       <label for="hotels-on-page" class="number-of-cards-label">
                         <span class="number-of-cards-description">Гостиниц на странице:</span>
                       </label>
-                        <select id="hotels-on-page" class="number-of-cards-select" name="hotels-on-page">
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option selected value="4">4</option>
-                        </select>
-
+                        <div class="select">
+                          <select id="hotels-on-page" class="select-control" name="hotels-on-page">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option selected value="4">4</option>
+                          </select>
+                        </div>
                       <button class="visually-hidden" type="submit">Применить</button>
                     </form>
                 </div>
